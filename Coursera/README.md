@@ -1,0 +1,1 @@
+En este directorio se busca integrar las notas/ejercicios sobre el curso de coursera sobre python y asi dominarlo, pero esto ya que es un curso bastante explicito:)En este directorio se busca integrar las notas/ejercicios sobre el curso de coursera sobre python y asi dominarlo, pero esto ya que es un curso bastante explicito:)

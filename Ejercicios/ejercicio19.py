@@ -1,6 +1,6 @@
  ## Se ingresa el primer valor
 
-def condicion_valores():
+def condicion_valores(valor_funcion):
     num1 = int(input("Ingrese el primer valor: \n"))
 
     ## Se ingresa el segundo valor.
@@ -22,5 +22,9 @@ def condicion_valores():
             print("El numero tres es el mayor \n")
             print(num3)
 
+    valor_funcion = valor_funcion + num3
 
-condicion_valores()
+    print (valor_funcion)
+
+
+variable = condicion_valores(12)

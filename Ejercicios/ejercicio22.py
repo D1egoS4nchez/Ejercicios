@@ -16,4 +16,5 @@ else:
     else:
         if numero1 <= 9 and numero2 <= 9 and numero3 <= 9:
             print("Todos los numeros son menores a 10")
+
 #if numero1, numero2, numero3 == 10:

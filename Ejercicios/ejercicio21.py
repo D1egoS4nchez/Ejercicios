@@ -9,10 +9,10 @@ dia = int(input("Ingrese la fecha que desee: \n"))
 mes = int(input("Ingrese el mes que desee: \n"))
 ano = int(input("Ingrese el año que desee: \n"))
 
-"""def fecha():
+def fecha():
     print("El " + str(dia) + " del mes " + str(mes) + " del año " + str(ano))
 
-if dia == dia_navidad and mes == mes_navidad:
+""" if dia == dia_navidad and mes == mes_navidad:
     print("La fecha que ingreso, se marca que es Navidad\n")
     fecha()
 
@@ -22,4 +22,8 @@ else:
 if dia >= 32 or mes >=13:
     print("No se adminte esta fecha, tiene una dato incorrecto o incoherente ")
 else:
-    lado = int(input("Prueba"))
+    if dia == dia_navidad and mes == mes_navidad:
+        print("La fecha que ingreso, se marca que es Navidad\n")
+        fecha()
+    else:
+        fecha()

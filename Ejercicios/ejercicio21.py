@@ -12,7 +12,7 @@ ano = int(input("Ingrese el año que desee: \n"))
 def fecha():
     print("El " + str(dia) + " del mes " + str(mes) + " del año " + str(ano))
 
-""" if dia == dia_navidad and mes == mes_navidad:
+"""if dia == dia_navidad and mes == mes_navidad:
     print("La fecha que ingreso, se marca que es Navidad\n")
     fecha()
 

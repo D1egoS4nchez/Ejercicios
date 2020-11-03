@@ -8,7 +8,7 @@ def suma_while():
         valor = int(input("Ingrese el numero que va a sumar: \n"))
         suma = suma + valor
         x = x + 1
-    promedio = suma / 10
+    promedio = suma // 10
     print("La suma de los 10 valores que ingreso es: \n", suma)
     print("\t")
     print("El promedio es de: \t", promedio)

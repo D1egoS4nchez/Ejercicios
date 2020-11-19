@@ -20,7 +20,7 @@ for x in range(1,100,2):
 """
 
 1 - Como aqui se puede ver aqui, es el valor inicia que es 1 que se puso en el parametro 1
-3      - En la segunda vuelta se incrementa 2 
+3      - En la segunda vuelta se incrementa 2
 5
 7
 9

@@ -24,9 +24,8 @@ print("\n")
 
 print("Los rectangulos que tienen una area mayor a doce son {} \n".format(contador_puto))
 
-"""quiere_triangulo = input("Quiere calcular con los datos que ingreso el area de un triangulo?: \n [y=yes / n=no]")
+quiere_triangulo = input("Quiere calcular con los datos que ingreso el area de un triangulo?: \n [y=yes / n=no]")
 
 
 if quiere_triangulo == "y":
     print("Arre pa")
-"""

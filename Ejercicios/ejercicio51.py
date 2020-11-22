@@ -28,12 +28,12 @@ for f in range(1,n_triangunlos):
 
     if lado_1 == lado_2 and lado_1 == lado_3:
         equilatero += 1
-    else:
+    else:iuf
         escaleno += 1
     if lado_1 == lado_2 or lado_1 == lado_3 or lado_2 == lado_3:
 
         isoceles += 1
-        
+
 
 print(equilatero)
 print(escaleno)

@@ -27,6 +27,8 @@ while regreso == False:
 
     if numero <= 10:
         regreso = True
+
+
 for f in range(1,11):
     multiplicacion = numero * f
 

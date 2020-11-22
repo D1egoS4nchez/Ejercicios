@@ -25,6 +25,8 @@ while regreso == False:
 
     numero = int(input("Ingrese el numero del 1 al 10 que quiere multiplicar: \n"))
 
+    if numero <= 10:
+        regreso = True
 for f in range(1,11):
     multiplicacion = numero * f
 

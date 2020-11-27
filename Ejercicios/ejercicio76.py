@@ -12,3 +12,4 @@ while valor != 0:
 
 print("Tamaño de la lista: {} ".format(len(lista)))
 print(lista)
+git 

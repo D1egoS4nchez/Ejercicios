@@ -24,16 +24,23 @@ def hacer_listas():
         #Se hace una variable para que guarde la variable
         producto_precio = int(input("Ingrese el precio del producto {}: \n".format(lista_nombre[x])))
 
-        #Se agrega el valor de la variable producto_precio en la lista, cada vez 
+        #Se agrega el valor de la variable producto_precio en la lista, cada vez
         precio_productos.append(producto_precio)
 
 
+    #Inicializamos una variable que guarde el primer valor de la lista de precios
     producto_mayor_precio = precio_productos[0]
 
     contador = 0
 
+    #Hacemos un bluce para la siguiente condicion
     for x in range(5):
+
+        #Nos dice que si el producto de la vuelta x es menor a producto_mayor_precio
+
         if precio_productos[x] < producto_mayor_precio:
+
+            #Este sumara un contador
             contador += 1
 
     print("Hay {} productos que son mayores al primero".format(contador))

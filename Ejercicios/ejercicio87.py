@@ -15,6 +15,8 @@ suma_dos_lista = []
 
 
 print("Primera lista--------------------")
+
+#Se incializa un bucle for para que se ingresen los elementos de la primera lista
 for x in range(4):
 
     valor = int(input("Ingrese el valor numero {}: ".format(x)))
@@ -23,6 +25,8 @@ for x in range(4):
 
 
 print("Segunda lista--------------------")
+
+#Se incializa un bucle for para que se ingresen los elementos de la segunda lista lista
 for x in range(4):
 
     valor = int(input("Ingrese el valor numero {}: ".format(x)))
@@ -30,8 +34,12 @@ for x in range(4):
     lista_numerica_2.append(valor)
 
 print("Suma de los valores en una lista--------------------")
+
+#En este es un bluce, pero en cada vuelta se va a sumar los valores de la posicion de cada vuelta
 for x in range(4):
     suma = lista_numerica_1[x] + lista_numerica_2[x]
+
+    #Se va a sumar el valor de la vuelta x y se va a agregar en una lista
     suma_dos_lista.append(suma)
 
 

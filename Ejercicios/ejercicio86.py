@@ -30,11 +30,11 @@ for x in range(4):
     if notas_lista[x] >= 8:
         arriba_8.append(notas_lista[x])
 
-        condicion_alumno.append("Muy buena")
+        condicion_alumno.append("Muy bueno")
 
         contador_muy_bueno += 1
     else:
-        if notas_lista[x] >= 4:
+        if notas_lista[x] > 4:
             rango_4_7.append(notas_lista[x])
 
             condicion_alumno.append("Bueno")
@@ -44,7 +44,10 @@ for x in range(4):
 
                 condicion_alumno.append("Insuficiente")
 
+rango = 4
+for x in range(rango):
 
+    print("El alumno numero {}, se llama {} y este saco {}, se podria decir que esta en el rango de {}".format(x, nombre_lista[x], notas_lista[x],condicion_alumno[x]))
+    print("---------------------------------------------------------------------------------------------------------------")
 
-print(condicion_alumno)
 print("Hay {} alumnos que tienen una muy buena calificacion . ".format(contador_muy_bueno))

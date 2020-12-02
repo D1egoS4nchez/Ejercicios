@@ -20,7 +20,7 @@ for x in range(4):
 
     notas_lista.append(nota_bucle)
 
-arriba_8 = []
+arriba_8 = [] 
 rango_4_7 = []
 abajo_de_4 = []
 

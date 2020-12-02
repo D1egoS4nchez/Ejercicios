@@ -20,34 +20,31 @@ for x in range(4):
 
     notas_lista.append(nota_bucle)
 
-arriba_8 = [] 
+arriba_8 = []
 rango_4_7 = []
 abajo_de_4 = []
 
 condicion_alumno = []
 contador_muy_bueno = 0
 for x in range(4):
-    if notas_lista[x] > 7:
+    if notas_lista[x] >= 8:
         arriba_8.append(notas_lista[x])
 
-        condicion_alumno.append("Muy bueno")
+        condicion_alumno.append("Muy buena")
 
         contador_muy_bueno += 1
-
-    if notas_lista[x] < 6 or     notas_lista[x] > 4:
-
-        rango_4_7.append(notas_lista[x])
-
-        condicion_alumno.append("Bueno")
-
     else:
+        if notas_lista[x] >= 4:
+            rango_4_7.append(notas_lista[x])
 
-        if notas_lista[x] < 4:
+            condicion_alumno.append("Bueno")
+        else: #Aqui se usa else porque si esto no pasa, pasa lo contrario que es menos
+
+                abajo_de_4.append(notas_lista[x])
+
+                condicion_alumno.append("Insuficiente")
 
 
-            abajo_de_4.append(notas_lista[x])
-
-            condicion_alumno.append("Insuficiente")
 
 print(condicion_alumno)
-print("Hay {} alumnos que tienen Muy bueno. ".format(contador_muy_bueno))
+print("Hay {} alumnos que tienen una muy buena calificacion . ".format(contador_muy_bueno))

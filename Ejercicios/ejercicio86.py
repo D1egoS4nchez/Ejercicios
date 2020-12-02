@@ -34,7 +34,7 @@ for x in range(4):
 
         contador_muy_bueno += 1
 
-    if notas_lista[x] < 6 or notas_lista[x] > 4:
+    if notas_lista[x] < 6 or     notas_lista[x] > 4:
 
         rango_4_7.append(notas_lista[x])
 

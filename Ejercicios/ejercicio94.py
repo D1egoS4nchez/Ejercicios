@@ -18,6 +18,7 @@ for x in range(5):
 
     habitantes.append(ha)
 
+
 if
     for k in range(4):
         for x in range(4-k):

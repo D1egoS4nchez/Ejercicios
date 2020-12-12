@@ -6,4 +6,7 @@ muestre ordenados de menor a mayor. En otra función solicitar la carga de 3 ent
 
 
 def comparar(nm1, nm2, nm3):
-    
+    if nm1 > nm2 and nm1 > nm3:
+        
+    else:
+

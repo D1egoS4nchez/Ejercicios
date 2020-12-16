@@ -1,4 +1,5 @@
 #!/usr/bin/env python3  
+<<<<<<< HEAD
 #-*- coding: utf-8 -*-
 
 """ Confeccionar una función que calcule la superficie de un rectángulo y la retorne, la función recibe como parámetros los valores de dos de sus lados:
@@ -16,3 +17,5 @@ an = int(input("Ingrese el ancho de su rectangulo: "))
 
 print("La superficie del triangulo es {}". format(calcular_sup_rectangulo(al, an)))
     
+=======
+>>>>>>> refs/remotes/origin/master

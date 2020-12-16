@@ -19,7 +19,7 @@ def checar():
         if frase[x] == "a" or frase[x] == "A":
             retorno_numero += 1
 
-    print("Su frase que ingreso tiene este numero de a (minusculass) y A(mayusculas) {} : .format(retorno_numero))
+    print("Su frase que ingreso tiene este numero de a (minusculass) y A(mayusculas) {} :" .format(retorno_numero))
 
 #bloque principal
 

@@ -33,7 +33,7 @@ def menor(lista):
     #Se hace un bucle for pero la primera posicion en la queinicia es uno y se toma lo largo el largo 
     for x in range(1,len(lista)):
 
-        #Hacemos una condicion 
+        #Hacemos una condicion que si se cumple se guarda el numero en la variable 
         if lista[x]<men:
             men=lista[x]
     return men

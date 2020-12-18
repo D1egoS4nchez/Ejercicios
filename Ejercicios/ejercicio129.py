@@ -7,7 +7,7 @@ Dentro de la función mostrar cada elemento de la lista multiplicado por el valo
 
 def lista_asignacion(lista, entero):
     for x in range(len(lista)):
-        print((lista[x] * entero) + " ")
+        print(str(lista[x] * entero) + " ")
 
 
 

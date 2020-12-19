@@ -16,18 +16,19 @@ def cargar_lista():
     return li 
 
 def imprimir_mayor10(li):
-    contador = 0
+    
     print("Elementos de la lista mayores a 10")
     for x in range(len(li)):
         if li[x]>10:
             print(li[x], " ")
 
-            contador += 1
-    return contador
+            
+    
 
 
 # Bloque principal del programa
 
 lista = cargar_lista()
+print(lista)
 imprimir_mayor10(lista)
 

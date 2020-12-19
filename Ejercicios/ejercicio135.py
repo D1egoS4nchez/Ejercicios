@@ -14,12 +14,15 @@ Desarrollar las siguientes funciones y llamarlas desde el bloque principal:
 def cargar_lista():
     lista = []
     for x in range(10):
-        valorsto = int(input("Ingrese el valo que quiere cara de pija: "))
+        valorsto = int(input("Ingrese el sueldo que quiere que tenga la cara de pija: "))
         lista.append(valorsto)
     return lista
 
 def impresion():
     print(cargar_lista())
+
+
+def
 
 #MAIN BLOCK
 impresion()

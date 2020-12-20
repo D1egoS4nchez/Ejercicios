@@ -9,3 +9,33 @@ Definir las siguientes funciones:
 4) Ingresar por teclado un importe y luego mostrar todos los artículos con un precio menor igual al valor ingresado. """
 
 
+
+def cargar():
+    lista_articulos = []
+    lista_precios = []
+    for x in range(5):
+        articulo = input("Ingrese el nombre del articulo: ")
+        lista_articulos.append(articulo)
+        precio = int(input("Ingrese el valor del articulo {}: ".format(lista_articulos[x])))
+        lista_precios.append(precio)
+    #Se retorna las lista dentro de una lista
+    return [lista_articulos, lista_precios] 
+
+
+def impresion(lista_1, lista_2):
+    for k in range(5): 
+        print(lista_1[k]+ " " + str(lista_2[k]))
+
+
+def checadita(lista_1, lista_2):
+    piv = 0 
+
+    for w in range(5):
+      if lista_2[w]
+
+
+
+#MAIN BLOCK 
+lis_1, lis_2 = cargar()
+impresion(lis_1, lis_2)
+

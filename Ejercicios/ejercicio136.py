@@ -34,7 +34,7 @@ def checadita(lista_1, lista_2):
         for w in range(x-1):
             if lista_2[w]>piv:
                 piv = {lista_2[w], lis_1[w]}
-                contador += 1
+                
     return piv
 
     #return contador 

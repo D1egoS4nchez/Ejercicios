@@ -28,14 +28,22 @@ def impresion(lista_1, lista_2):
 
 
 def checadita(lista_1, lista_2):
-    piv = 0 
+    piv = lista_2[0]
+    contador = 0
+    for x in range(5):
+        for w in range(x-1):
+            if lista_2[w]>piv:
+                piv = {lista_2[w], lis_1[w]}
+                contador += 1
+    return piv
 
-    for w in range(5):
-      if lista_2[w]
+    #return contador 
 
 
 
 #MAIN BLOCK 
 lis_1, lis_2 = cargar()
 impresion(lis_1, lis_2)
+pivoteo = checadita(lis_1, lis_2)
 
+print("El mayor es {}".format(pivoteo))

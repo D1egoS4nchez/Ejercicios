@@ -16,13 +16,45 @@ def cargar_lista():
     for x in range(10):
         valorsto = int(input("Ingrese el sueldo que quiere que tenga la cara de pija: "))
         lista.append(valorsto)
+    print("Todos lo sueldos son estos: \n {} ".format(lista))
     return lista
 
-def impresion():
-    print(cargar_lista())
+
+def checar_sueldo(lis):
+    contador = 0
+    for x in range(len(lis)):
+        if lis[x] > 4000:
+            contador += 1
+    return contador
+
+def promedio(lis): 
+    suma = 0
+    for x in range(len(lis)):
+        suma = suma + lis[x]
+    promedio = suma / 10
+    return promedio
+
+def debajo_promedio(prom, lis):
+    debajo = 0
+    lista_valor = []
+    for x in range(len(lis)):
+        if lis[x] < prom:
+            debajo += 1
+            lista_valor.append(lis[x])
+    return debajo, lista_valor
 
 
 def
 
 #MAIN BLOCK
-impresion()
+
+lista = cargar_lista()
+contador = checar_sueldo(lista)
+promedio = promedio(lista)
+print("El promedio de los sueldos ingresados son: {}".format(promedio))
+debajo_del_promedio, valores = debajo_promedio(promedio, lista)
+#Se muestra los sueldos que estan debajo del promedio 
+
+print("Los sueldos que estan debajo del promedio hay {}".format(debajo_del_promedio))
+
+print(valores)

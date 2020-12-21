@@ -7,7 +7,9 @@ Obtener el promedio de las mismas. Contar cuántas personas son más altas que e
 
 suma = 0
 promedio_mas = 0
-
+lista = []
 promedio_menos= 0
 for x in range(1,5+1):
     lista_alturas = float(input("Ingrese las alturas de las personas"))
+    lista.append(str(lista_alturas) + " mts")
+print(lista)

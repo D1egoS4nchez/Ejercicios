@@ -21,14 +21,18 @@ def splito(lis):
         lis_pos.append(lis[x])
         lis_nega.append(- + (lis[x]))
     return lis_pos, lis_nega
-#Main block 
-lista = cargar()
-lista_positivia, lista_negativa = splito(lista)
+#Main block
 
-print("La lista positiva es esta: \n")
-for x in range(len(lista_positivia)):
-    print("| "+ str(lista_positivia[x]) + " |")
+def mainblock():
+    lista = cargar()
+    lista_positivia, lista_negativa = splito(lista)
 
-print("La lista negativa es: ")
-for w in range(len(lista_negativa)):
-    print("| " + str(lista_negativa[w]) + " |")
+    print("La lista positiva es esta: \n")
+    for x in range(len(lista_positivia)):
+        print("| "+ str(lista_positivia[x]) + " |")
+
+    print("La lista negativa es: ")
+    for w in range(len(lista_negativa)):
+        print("| " + str(lista_negativa[w]) + " |")
+
+mainblock()

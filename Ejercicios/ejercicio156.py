@@ -8,4 +8,15 @@ Implementar las funciones:
 3) Nombre del empleado con sueldo mayor.
 4) Cantidad de empleados con sueldo menor a 1000. """
 
+def cargar():
+    empleados = 0
+    for x in range(5):
+        nombre = input("Ingrese el nombre: ")
+        sueldo = int(input("Ingrese el sueldo: "))
+        empleados.append((nombre,sueldo))
+    return empleados
 
+
+def imprimir(empleados):
+    print("Listado de los nombres de empleados y sus sueldos")
+    

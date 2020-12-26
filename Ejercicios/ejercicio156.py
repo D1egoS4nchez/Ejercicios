@@ -19,4 +19,14 @@ def cargar():
 
 def imprimir(empleados):
     print("Listado de los nombres de empleados y sus sueldos")
-    
+    for nombre,sueldo in empleados:
+        print(nombre,sueldo)
+
+
+
+def mayor_sueldo(empleados):
+    empleado = empleados[0]
+    for emp in empleados:
+        if emp[1]>empleado[1]:
+            empleado = emp
+    print("Empleado con mayor sueldo es:",empleado[0]

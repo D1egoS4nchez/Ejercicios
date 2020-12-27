@@ -25,8 +25,12 @@ def listado(dic):
         print(x, dic[x], sep="/",)
         
 def checada(dic):
+    nro = int(input("Ingrese el numero de documento a consultar: "))
     
-
+    if nro in dic:
+        print("Nombre de la persona:",dic[nro])
+    else:
+        print("No existe una persona con dicho numero de documento")
 
 
     #MAIN BLOCK

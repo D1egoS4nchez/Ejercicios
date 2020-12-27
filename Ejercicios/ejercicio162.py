@@ -11,7 +11,7 @@ Desarrollar las siguientes funciones:
 def cargar():
     diccionario = {}
     whil = "s"
-    while whil == "s" or "S" or "si":
+    while whil == "s" or  whil == "S"  or whil == "si":
         num_doc = int(input("Ingrese el numero de documento de la persona: "))
         nombre = input("Ingrese el nombre de una persona")
         diccionario[num_doc]=nombre
@@ -19,8 +19,18 @@ def cargar():
 
     return diccionario
 
+def listado(dic):
+    print("Numero / Nombre")
+    for x in dic:
+        print(x, dic[x], sep="/",)
+        
+def checada(dic):
+    
 
 
-#MAIN BLOCK
+
+    #MAIN BLOCK
 
 dic = cargar()
+listado(dic)
+checada(dic)

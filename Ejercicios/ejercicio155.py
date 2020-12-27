@@ -26,17 +26,31 @@ def imprimir(lista):
     print("Lista completa")
     #La palabra elemento es igual a poner un x, en este caso lo no es necesario poner la lista y el elemento
     for elemento in lista:
-
+        #Itera en cada elemento en la lista
+        #Imprime el elemento en cada vuelta
         print(elemento, end="-")
     print("\n")
 
+#Funcion para sacar el mayor ;)
+
 def mayor(lista):
+    #Guardamos la primera posicion de la lista en una variable para comparar
     may = lista[0]
+    #Iteramos en la lista 
     for elemento in lista:
+        #La condicion dice que si el elemento de la lista o el elemento que toque ve si se cumple la condicion
         if elemento>may:
+            #Si cumple la condicion lo que hará es sobreescribir el valor de la posicion o el valor de la vuelta que cumple la condicion
             may = elemento
     print("El elemento mayor de la lista es: {}".format(may))
 
+
+"""def prueba(lista):
+    for uno in lista:
+        print(uno,"\ ")"""
+
+
+#Funcion para sumar todos los elementos iterando en cada elemento de la lista, asi guardando en la variable el resultado 
 def suma_elementos(lista):
     suma = 0
 
@@ -46,7 +60,13 @@ def suma_elementos(lista):
 
 #MAIN BLOCK
 
-lista = cargar()
-imprimir(lista)
-mayor(lista)
-suma_elementos(lista)
+#BLOQUE PRINCIPAL PARA EJECUTAR TODAS LAS FUNCIONES
+def  mainblock():
+    lista = cargar()
+    prueba(lista)
+    imprimir(lista)
+    mayor(lista)
+    suma_elementos(lista)
+
+
+mainblock()

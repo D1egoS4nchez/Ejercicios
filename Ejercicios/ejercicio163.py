@@ -19,6 +19,7 @@ def cargar():
         #                     [0]       [1]     [2]
         productos[codigo]=(descripcion,precio, stock)
         continua = input(" ¿Desea caragr otro producto [s/n]?")
+    #Retornamos el diccionario como el codigo como la clave y los demas como valores xd
     return productos
 
 def imprimir(productos):

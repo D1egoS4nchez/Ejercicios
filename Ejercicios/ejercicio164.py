@@ -12,10 +12,14 @@ Implementar las siguientes funciones:
 
 #Funcion para cargar valores en el diccionario
 def cargar():
-
+    
+    #Creamos un diccionario vacio
     agenda = {}
+    #Hacemos un puntero para el while
     continua1 = "s"
+    #Hacemos un while para ingresar datos en el diccionario
     while continua1 == "s":
+        #
         fecha = input("Ingrese la fecha con formaton dd/mm/aa: ")
         continua2 = "s"
         lista = []

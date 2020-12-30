@@ -27,14 +27,14 @@ def cargar():
         lista = []
         #Hacemos otro while para guardar los valores en la lista y no se tenga problemas x
         #Hacemos un while para continuar en el bucle
-        while continua2 == "s":
-
-            hora = input("Ingrese la hora con formato hh:mm ")
-            actividad = input("Ingrese la descripcion de la actividad: ")
-            lista.append((hora.actividad))
-            continua2 = input("Ingrese otra actividad para la misma fecha[s/n]: ")
+        while continua2=="s":
+            hora=input("Ingrese la hora de la actividad con formato hh:mm ")
+            actividad=input("Ingrese la descripcon de la actividad:")
+            lista.append((hora,actividad))
+            continua2=input("Ingresa otra actividad para la misma fecha[s/n]:")
         agenda[fecha]=lista
-        continua1 = input("Ingresa otra fecha [s/n]: ")
+        continua1=input("Ingresa otra fecha[s/n]:")
+     
     return agenda
 
 

@@ -29,3 +29,7 @@ def charge():
     return curricular 
 
 print(charge())
+
+
+#MAIN BLOCK
+curri = charge()

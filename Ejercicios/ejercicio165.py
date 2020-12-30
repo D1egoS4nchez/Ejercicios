@@ -34,8 +34,25 @@ def listar(curricular):
         for j,k in curricular[numero]:
             print("El nombre de la materia es {} y obtuvo de calificacion un {}".format(j,k))
 
+def consultar(curricular):
+    pointer = "s"
+    while pointer == "s" or pointer == "si" or pointer == "S" or pointer = "SI":
+    
+        dni_num = int(input("Ingrese el numero del estudiante que quiere buscar: "))
+    
+        if dni_num in curricular:
+            for x,j in curricular[dni_num]:
+                print(x,j, sep = "/")
+        pointer = input("¿Quiere buscar a otro alumno? [s/n]")
+
+
+
+def main()
 
 #MAIN BLOCK
-curri = charge()
-listar(curri)
+    curri = charge()
+    listar(curri)
+    consultar(curri)
+
+
 

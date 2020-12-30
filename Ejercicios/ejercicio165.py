@@ -55,4 +55,4 @@ def main()
     consultar(curri)
 
 
-
+main()

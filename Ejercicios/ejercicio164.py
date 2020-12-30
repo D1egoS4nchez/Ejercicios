@@ -10,8 +10,9 @@ Implementar las siguientes funciones:
 3) Consulta de una fecha.
 """
 
-
+#Funcion para cargar valores en el diccionario
 def cargar():
+
     agenda = {}
     continua1 = "s"
     while continua1 == "s":
@@ -27,5 +28,26 @@ def cargar():
         continua1 = input("Ingresa otra fecha [s/n]: ")
     return agenda
 
+def imprimir(agenda):
+    print("Listado completa de la agenda")
+    for fecha in agenda:
+        print("Para la fecha: {}".format(fecha))
+        for hora,actividad in agenda[fecha]:
+            print(hora,actividad)
+
+
+
+def consulta_fecha(agenda):
+    fecha = int(input("Ingrese la fecha que desea consultar: "))
+    if fecha in agenda:
+        for hora,actividad in agenda[fecha]:
+            print(hora,actividad)
+        else:
+            print("No hay actividades agendadas para dicha fecha")
+
 
     
+#MAIN
+agenda = cargar()
+imprimir(agenda)
+consulta_fecha(agenda)

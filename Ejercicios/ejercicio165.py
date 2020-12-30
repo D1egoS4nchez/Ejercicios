@@ -26,10 +26,16 @@ def charge():
             lista.append((materia,nota))
         curricular[num_doc]=lista
         pointer1 = input("¿Quiere ingresar a otro alumno? [s/n]")
-    return curricular 
+    return curricular
 
-print(charge())
+def listar(curricular):
+    for numero in curricular: 
+        print("El numero del alumno es: {}".format(numero))
+        for j,k in curricular[numero]:
+            print("El nombre de la materia es {} y obtuvo de calificacion un {}".format(j,k))
 
 
 #MAIN BLOCK
 curri = charge()
+listar(curri)
+

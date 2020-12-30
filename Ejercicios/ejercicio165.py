@@ -20,7 +20,7 @@ def charge():
         lista = []
         pointer2 = "s"
         while pointer2 == "s" or pointer2 == "S" or pointer2 == "si" or pointer2 == "SI":
-            materia = input("Ingrese el nombre de la materia: "1)
+            materia = input("Ingrese el nombre de la materia: ")
             nota = int(input("Ingrese la nota que obtuvo en la materia: ")
             pointer2 = input("Quiere ingresar otra materia: [s/n]")
             lista.append((materia,nota))

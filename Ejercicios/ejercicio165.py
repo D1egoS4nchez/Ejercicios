@@ -15,16 +15,17 @@ def charge():
     
     curricular = {}
     pointer1 = "s"
-    while pointer1 == "s":
+    while pointer1 == "s" or pointer1 == "si" or pointer1 == "S" or pointer1 == "SI":
         num_doc = int(input("Ingrese el numero del documento del alumno: "))
         lista = []
         pointer2 = "s"
         while pointer2 == "s" or pointer2 == "S" or pointer2 == "si" or pointer2 == "SI":
             materia = input("Ingrese el nombre de la materia: ")
-            nota = int(input("Ingrese la nota que obtuvo en la materia: ")
+            nota = int(input("Ingrese la nota que obtuvo en la materia: "))
             pointer2 = input("Quiere ingresar otra materia: [s/n]")
             lista.append((materia,nota))
         curricular[num_doc]=lista
+        pointer1 = input("¿Quiere ingresar a otro alumno? [s/n]")
     return curricular 
 
 print(charge())

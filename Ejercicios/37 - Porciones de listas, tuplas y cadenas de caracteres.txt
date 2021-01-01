@@ -1,0 +1,2 @@
+37 - Porciones de listas, tuplas y cadenas de caracteres
+El lenguaje Python nos facilita una sintaxis muy sencilla par recuperar un trozo de una lista, tupla o cadena de caracteres.

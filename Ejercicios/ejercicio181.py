@@ -18,7 +18,9 @@ while pointer == False and s == "s":
     n = int(input("Ingrese el valor: "))
     if n == valor:
         pointer = True
+        print("Gano")
     else:
+        print("El numero aleatorio es mayor")
         pass
     s = input("Quiere intentarlo otra vez?")
 print(valor)

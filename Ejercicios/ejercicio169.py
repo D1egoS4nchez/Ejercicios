@@ -36,11 +36,14 @@ def cargar():
     #Se devuelve el diccionario que anteriormente agregamos datos
     return datos
 
-#
+#Imprimos los datos, tomamos como parametro el diccionario como datos;)
 def imprimir(datos):
     print("Listado completo de empleados")
+    #Tomamos lo que es la clave y en cada vuelta tomamos cada clave del valor
     for k in datos:
+        #Imprem
         print(k,datos[k][0],datos[k][1],datos[k][2])
+
 
 def modificar(dat):
     num = int(input("Ingrese el numero de empleado que quiere que se modifique el sueldo: "))

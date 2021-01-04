@@ -22,9 +22,11 @@ class Alumno:
 
 
 #MAIN BLOCK
-
+#Se hace un objeto con una variable, pero primero tenemos que decirle a que clase pertenece
 alumno1 = Alumno()
+#Despues de eso podemos poner los metodos de esta clase
 alumno1.inicializar("Diego",2)
+#En este metodo lo que haces
 alumno1.imprimir()
 alumno1.mostrar_estado()
 

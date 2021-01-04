@@ -15,8 +15,6 @@ def cargar_lista():
 
 
 
-
-
 def retornar_mayor_menor(li):
     ma = li[0]
     me = li[0]

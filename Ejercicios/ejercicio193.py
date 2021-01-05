@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 
 """
@@ -15,12 +15,12 @@ class Operaciones:
 
     def calcular(self):
 
-        def suma():
+        def suma(self):
             suma = self.valor_1 + self.valor_2
             print("La suma de {} y {} es {}".format(self.valor_1,self.valor_2, suma))
         
 
-        def resta():
+        def resta(self):
             if self.valor_1 > self.valor_2:
                 resta =  self.valor_1 - self.valor_2
                 print("La resta de {} y {} resulta {}".format(self.valor_1,self.valor_2,resta))
@@ -29,12 +29,12 @@ class Operaciones:
                 print("La resta de {} y {} resulta {}".format(self.valor_2,self.valor_1,resta))
 
 
-        def multiplicar():
+        def multiplicar(self):
             multi = self.valor_1 * self.valor_2
             print("La multi de {} y {} resulta {}".format(self.valor_1,self.valor_2,multi))
     
 
-        def division():
+        def division(self):
             if self.valor_1 > self.valor_2:
                 div = self.valor_1 / self.valor_2
                 print("La divsion de {} y {}, es {}".format(self.valor_1, self.valor_2, div))

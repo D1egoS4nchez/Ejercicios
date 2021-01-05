@@ -20,7 +20,8 @@ class Triangulo:
             lista.append(valor)
         #Hacemos el atributo lado y en este le agregamos la lista
         self.lados = lista
-
+    
+    #Hacemos el segundo metodo para imprimir la la lista en este caso el atributo lados
     def imprimir(self):
         s = input("¿Quiere ver su lados impresos verticalmente? [s/n]")
         if s == "s" or s == "S" or s == "si":
@@ -28,6 +29,9 @@ class Triangulo:
                 print(elemento)
         else:
             print(self.lados)
+
+
+
     def checar(self):
         if self.lados[0] == self.lados[1] and self.lados[0] == self.lados[2]:
             print("Es equilatero")

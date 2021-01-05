@@ -16,31 +16,31 @@ class Operaciones:
     def calcular(self):
 
         def suma():
-            suma = self.valor_1 + self.valor_2
+            self.suma = self.valor_1 + self.valor_2
             print("La suma de {} y {} es {}".format(self.valor_1,self.valor_2, suma))
         
 
         def resta():
             if self.valor_1 > self.valor_2:
-                resta =  self.valor_1 - self.valor_2
-                print("La resta de {} y {} resulta {}".format(self.valor_1,self.valor_2,resta))
+                self.resta =  self.valor_1 - self.valor_2
+                print("La resta de {} y {} resulta {}".format(self.valor_1,self.valor_2,self.resta))
             else:
-                resta = self.valor_2 - self.valor_1
-                print("La resta de {} y {} resulta {}".format(self.valor_2,self.valor_1,resta))
+                self.resta = self.valor_2 - self.valor_1
+                print("La resta de {} y {} resulta {}".format(self.valor_2,self.valor_1,self.resta))
 
 
         def multiplicar():
-            multi = self.valor_1 * self.valor_2
-            print("La multi de {} y {} resulta {}".format(self.valor_1,self.valor_2,multi))
+            self.multi = self.valor_1 * self.valor_2
+            print("La multi de {} y {} resulta {}".format(self.valor_1,self.valor_2,self.multi))
     
 
         def division():
             if self.valor_1 > self.valor_2:
-                div = self.valor_1 / self.valor_2
-                print("La divsion de {} y {}, es {}".format(self.valor_1, self.valor_2, div))
+                self.div = self.valor_1 / self.valor_2
+                print("La divsion de {} y {}, es {}".format(self.valor_1, self.valor_2, self.div))
             else:
-                div = self.valor_2 / self.valor_1
-                print("La divsion de {} y {}, es {}".format(self.valor_2, self.valor_1, div))
+                self.div = self.valor_2 / self.valor_1
+                print("La divsion de {} y {}, es {}".format(self.valor_2, self.valor_1, self.div))
 
     
 
@@ -52,8 +52,10 @@ class Operaciones:
 
     def imprimir(self):
         print(self.suma)
+        print(self.resta)
 #MAIN BLOCK
 
 operacion_1 = Operaciones()
 operacion_1.calcular()
+operacion_1.imprimir()
 

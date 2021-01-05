@@ -23,15 +23,19 @@ class Triangulo:
     
     #Hacemos el segundo metodo para imprimir la la lista en este caso el atributo lados
     def imprimir(self):
+        #En este metodo lo que se hace es dar opciones, hacemos una variable para ir en una de las dos opciones
+
         s = input("¿Quiere ver su lados impresos verticalmente? [s/n]")
+        #Nos dice que si la variable s es igual a s o S o tambien a si, esta va a ejecutar el for que en teoria va a listar los datos de la lista
         if s == "s" or s == "S" or s == "si":
             for elemento in self.lados:
                 print(elemento)
+        #Si no se imprime la lista normal que es el atributo lados
         else:
             print(self.lados)
 
 
-
+    #Hacemos un metodo para checa los datos que estan en la lista
     def checar(self):
         if self.lados[0] == self.lados[1] and self.lados[0] == self.lados[2]:
             print("Es equilatero")

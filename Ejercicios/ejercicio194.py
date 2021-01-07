@@ -10,7 +10,7 @@ y llamarlos desde el mismo método __init__
 
 
 class Operacion:
-
+    #Metodo init que se inicia solo :D
     def __init__(self):
         self.valor1 = int(input("Ingrese el primer valor: "))
         self.valor2 = int(input("Ingrese el segundo valor: "))

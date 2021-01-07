@@ -13,13 +13,15 @@ Debe mostrar un menú con las siguientes opciones:
 
 
 class Administracion:
+    
 
+    def __init__(self):
+        self.menu()
 
-    def menu():
+    def menu(self):
         self.diccionario = {}
-        self.lista = []
         puntero = 0
-        while punter != 5:
+        while puntero != 5:
             print("1 - Cargar un contacto en la agenda")
             print("2 -  Listar completa la agenda")
             print("3 - Consulta ingresando el nombre de la persona")
@@ -29,22 +31,34 @@ class Administracion:
                 self.cargar()
             elif puntero == 2:
                 self.listar()
-            
+            elif puntero == 3:
+                self.consulta()
+            elif puntero == 4:
+                self.modificacion()
+            puntero = int(input("Ingrese el punto que quiere ejecutar: "))           
 
 
 
     def cargar(self):
         s = "s"
+        liste = []
         while s == "s" or s == "S" or s == "SI":
             nom = input("Ingrese el nombre de la persona: ")
             telefono = int(input("Ingrese el telefono de {}: ".format(nom)))
             mail = input("Ingrese su correo electronico:")
-            self.lista.append((telefono, mail))
-            self.diccionario[nom]=lista
+            liste.append((telefono, mail))
+            self.diccionario[nom]=liste
             s = input("¿Quiere ingresar otro contacto? [s/n]")
+        print("_______________________________________________")
 
     def listar(self):
+        for nombre in self.diccionario:
+            print(nombre, self.diccionario[nombre][0], self.diccionario[nombre][1])
+        print("__________________________________________________")
+    
+    
+    def consulta(self):
+   
 
-        for k,j in self.diccionario[nom]:
-            print(k,j]
-            
+    
+agenda1 = Administracion()

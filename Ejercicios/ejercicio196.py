@@ -58,6 +58,23 @@ class Administracion:
     
     
     def consulta(self):
+        nom = input("Ingrese el nombre que quiere buscar: ")
+        if nom in diccionario:
+            print(nom, self.diccionario[nom][0], self.diccionario[nom][1])
+        else:
+            print("No hay ningun contacto con ese nombre")
+        print("__________________________________________________")
+
+    def modificacion(self):
+        print("__________________________________________________")
+        nombre = input("Ingrese el nombre de la persona que quiere modificar los datos: ")
+        if nombre in self.contactos:
+            telefono=input("Ingrese el nuevo telefono:")
+            mail=input("Ingrese el nuevo mail:")
+            self.contactos[nombre]=(telefono,mail)
+        else:
+            print("No existe un contaxto con ese nombre")
+        print("______________________________________________")  
    
 
     

@@ -7,6 +7,8 @@ se tiran tres dados si los tres salen con el mismo valor mostrar un mensaje que 
 """
 import random 
 
+
+#Clase para cada dado
 class Dado:
     def tirar(self):
         #Hacemos un atributo llamado valor que tiene adentro un numero aleatorio de un rango de 1 a 6
@@ -19,15 +21,18 @@ class Dado:
 
         return self.valor
 
-
+#Clase para utilizar los objetos y usar los metodos dentro de la clase anterior y estos meterlos adentro de un metodo
 class JuegoDeDados:
 
 
     def __init__(self):
+        #Hacemos un objeto con la clase Dado
+        #Objeto uno llamado dado1
         self.dado1 = Dado()
+        #Objeto llamado dado2
         self.dado2 = Dado()
+        #Objeto llamado dado3
         self.dado3 = Dado()
-
     
     def jugar(self):
         self.dado1.tirar()

@@ -10,19 +10,24 @@ Definir una responsabilidad para imprimir el nombre del socio con mayor antigüe
 
 class Socio:
     
-
+    #Metodo init que inicializa los atributos nombre y antiguedad que se le ponga a la hora de llamar a la clase Socio
     def __init__(self):
         self.nombre = input("Ingrese su nombre: ")
         self.antiguedad = int(input("Ingrese la antiguedad que tiene el socio {} en el club: ".format(self.nombre)))
-
+    
+    #Metodo imprimir cada atributo que se le ponga al objeto
     def imprimir(self):
         print(self.nombre, "tiene {} años de antiguedad".format(self.antiguedad))
-
+    
+    #Metodo para retornar cua   
     def retornar_anos(self):
         return self.antiguedad
 
     def retornar_nom(self):
         return self.nombre
+
+
+#Clase club que integra objetos con la clase Socio
 class Club:
     
 

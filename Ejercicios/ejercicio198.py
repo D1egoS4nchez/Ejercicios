@@ -34,6 +34,8 @@ class JuegoDeDados:
         #Objeto llamado dado3
         self.dado3 = Dado()
     
+
+    #Metodo en que usamos los objetos que estan asociados con la clase Dado, pero en este metodo se usan los metodos de la otra clase   
     def jugar(self):
         self.dado1.tirar()
         self.dado1.imprimir()

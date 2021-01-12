@@ -30,7 +30,7 @@ class Socio:
 #Clase club que integra objetos con la clase Socio
 class Club:
     
-
+    #En el metodo init se hace 3 objetos con la clase socio, pero adentro del metodo init de la clase club, que lo que hace es inicializar estos objetos en la clase
     def __init__(self):
         self.socio_1 = Socio()
         self.socio_2 = Socio()

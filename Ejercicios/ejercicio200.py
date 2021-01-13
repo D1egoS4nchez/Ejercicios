@@ -37,14 +37,18 @@ class Empleado(Persona):
     def __init__(self):
         #Con el metodo super, agarramos de la clase padre el metodo init de el
         super().__init__()
+        #Hacemos un metodo adentro de la clase empleado, pero ya hay atributos de la clase padre
         self.sueldo = float(input("Ingrese el sueldo: "))
 
-
+    
+    #Metodo imprimir
     def imprimir(self):
+        #Se toma el metodo imprimir de la clase padr
+        #Se toma el metodo imprimir de la clase padree
         super().imprimir()
         print("Sueldo: ".format(self.sueldo))
 
-
+    #Hacemos un metodo que tome el atributo de la clase
     def paga_impuestos(self):
         if self.sueldo > 3000:
             print("Debe de pagar impuestos")

@@ -58,6 +58,7 @@ class Empleado(Persona):
 
 #MAIN BLOCK
 
+#Se hace un objeto
 persona1 = Persona()
 persona1.imprimir()
 print("_____________________________")
@@ -65,3 +66,11 @@ print("_____________________________")
 empleado1=Empleado()
 empleado1.imprimir()
 empleado1.paga_impuestos()
+
+#----- No borrar ------------
+
+#Hoy en un sueño, creo que me enamore xD, era una muchacha que no era de aquí, eran de las personas que caian y es por eso que no se pudo nada, supongo que el sentimiento era mutuo
+
+#----- No borrar ------------
+
+

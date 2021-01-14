@@ -35,7 +35,13 @@ class Operacion:
 
     def operar(self):
         pass
+"""
+En Python para indicar que un método está vacío se utiliza la palabra clave "pass".
 
+En el bloque principal de nuestro programa no creamos objetos de la clase Operación. La clase Operación tiene sentido que otras clases hereden de esta.
+
+Tanto la clase Suma y Resta heredan de la clase Operación y reescriben el método operar con la funcionalidad que le corresponde a cada clase:
+"""
 
 class Suma(Operacion):
 

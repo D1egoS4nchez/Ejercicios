@@ -12,11 +12,24 @@ En el bloque principal del programa definir un objeto de la clase CajaAhorro y o
 class Cuenta:
 
     def __init__(self):
-        pass
+        self.titular = input("Ingrese el nombre del propietario al que va a depositar: ")
+        self.monto = int(input("Ingrese el monto que va a depositar en la cuenta de {}: "format(self.titular)))
 
-class CajaAhorro:
+    def imprimir(self):
+        print("El titular de la caja es: {}".format(self.titular))
+        print("Tiene un monto en su cuenta de {}".format(self.monto))
+
+class CajaAhorro(Cuenta):
+    
+
+    def __init__(self):
+        super.__init__()
+        self.plazo = int(input("Ingrese de cuantos dias es el plazo: "))
+        self.intereses = float(input("Ingrese el porcentaje de interes: "))
+
+    def 
 
 
-class PlazoFijo:
+class PlazoFijo(Cuenta):
 
 

@@ -16,3 +16,5 @@ la = int(input("Ingrese el valor del lado"))
 if figura == 4:
     print(retornar_perimetro_cuadrado(la))
 
+class Pedro()
+
